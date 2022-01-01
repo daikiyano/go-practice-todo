@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"go-todo-practice/app/models"
-)
+import "go-todo-practice/app/models"
 
 func main() {
 	//fmt.Println(config.Config.Port)
@@ -39,9 +36,13 @@ func main() {
 	//	fmt.Println(v)
 	//}
 
-	user2, _ := models.GetUser(2)
-	todos, _ := user2.GetTodosByUser()
-	for _, v := range todos {
-		fmt.Println(v)
-	}
+	//user2, _ := models.GetUser(2)
+	//todos, _ := user2.GetTodosByUser()
+	//for _, v := range todos {
+	//	fmt.Println(v)
+	//}
+
+	t, _ := models.GetTodo(2)
+	t.Content = "update todo"
+	t.UpdateTodo()
 }
