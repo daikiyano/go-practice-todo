@@ -6,3 +6,201 @@
 2021/12/26 19:11:05 base.go:21: sql: unknown driver "sqlite3" (forgotten import?)
 2021/12/27 22:20:54 base.go:21: sql: unknown driver "sqlite3" (forgotten import?)
 2021/12/27 22:22:40 base.go:21: sql: unknown driver "sqlite3" (forgotten import?)
+2022/01/02 16:21:37 server.go:3090: http: panic serving [::1]:55077: template: layout.html:11: unexpected "{" in command
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc0000b34a0)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x13ba8a0, 0xc000098ec0)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x14c19a0, 0xc0001061c0, 0x13a0f60, 0x14b2640, 0xc00004ab30, 0x2, 0x2)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:16 +0x2b8
+go-todo-practice/app/controllers.top(0x14c19a0, 0xc0001061c0, 0xc0000fe200)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:8 +0xa4
+net/http.HandlerFunc.ServeHTTP(0x1449e00, 0x14c19a0, 0xc0001061c0, 0xc0000fe200)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1763d80, 0x14c19a0, 0xc0001061c0, 0xc0000fe200)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000106000, 0x14c19a0, 0xc0001061c0, 0xc0000fe200)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0000b34a0, 0x14c23e0, 0xc0000ce440)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/02 16:21:37 server.go:3090: http: panic serving [::1]:55105: template: layout.html:11: unexpected "{" in command
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc0000b3540)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x13ba8a0, 0xc000012080)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x14c19a0, 0xc0001840e0, 0x13a0f60, 0x14b2640, 0xc00004bb30, 0x2, 0x2)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:16 +0x2b8
+go-todo-practice/app/controllers.top(0x14c19a0, 0xc0001840e0, 0xc0000fe300)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:8 +0xa4
+net/http.HandlerFunc.ServeHTTP(0x1449e00, 0x14c19a0, 0xc0001840e0, 0xc0000fe300)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1763d80, 0x14c19a0, 0xc0001840e0, 0xc0000fe300)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000106000, 0x14c19a0, 0xc0001840e0, 0xc0000fe300)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0000b3540, 0x14c23e0, 0xc0000ce4c0)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/02 16:21:37 server.go:3090: http: panic serving [::1]:55106: template: layout.html:11: unexpected "{" in command
+goroutine 24 [running]:
+net/http.(*conn).serve.func1(0xc0000b35e0)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x13ba8a0, 0xc000098fb0)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x14c19a0, 0xc000106380, 0x13a0f60, 0x14b2640, 0xc00004ab30, 0x2, 0x2)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:16 +0x2b8
+go-todo-practice/app/controllers.top(0x14c19a0, 0xc000106380, 0xc0000fe600)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:8 +0xa4
+net/http.HandlerFunc.ServeHTTP(0x1449e00, 0x14c19a0, 0xc000106380, 0xc0000fe600)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1763d80, 0x14c19a0, 0xc000106380, 0xc0000fe600)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000106000, 0x14c19a0, 0xc000106380, 0xc0000fe600)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0000b35e0, 0x14c23e0, 0xc0000ce6c0)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/02 16:21:38 server.go:3090: http: panic serving [::1]:55107: template: layout.html:11: unexpected "{" in command
+goroutine 36 [running]:
+net/http.(*conn).serve.func1(0xc0001ba000)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x13ba8a0, 0xc000012120)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x14c19a0, 0xc000106460, 0x13a0f60, 0x14b2640, 0xc00004fb30, 0x2, 0x2)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:16 +0x2b8
+go-todo-practice/app/controllers.top(0x14c19a0, 0xc000106460, 0xc000072100)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:8 +0xa4
+net/http.HandlerFunc.ServeHTTP(0x1449e00, 0x14c19a0, 0xc000106460, 0xc000072100)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1763d80, 0x14c19a0, 0xc000106460, 0xc000072100)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000106000, 0x14c19a0, 0xc000106460, 0xc000072100)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0001ba000, 0x14c23e0, 0xc000022080)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/02 16:21:38 server.go:3090: http: panic serving [::1]:55108: template: layout.html:11: unexpected "{" in command
+goroutine 5 [running]:
+net/http.(*conn).serve.func1(0xc00007e000)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x13ba8a0, 0xc0000121b0)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x14c19a0, 0xc0001841c0, 0x13a0f60, 0x14b2640, 0xc00004ab30, 0x2, 0x2)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:16 +0x2b8
+go-todo-practice/app/controllers.top(0x14c19a0, 0xc0001841c0, 0xc0000fe900)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:8 +0xa4
+net/http.HandlerFunc.ServeHTTP(0x1449e00, 0x14c19a0, 0xc0001841c0, 0xc0000fe900)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1763d80, 0x14c19a0, 0xc0001841c0, 0xc0000fe900)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000106000, 0x14c19a0, 0xc0001841c0, 0xc0000fe900)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc00007e000, 0x14c23e0, 0xc0000ce840)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/02 16:21:38 server.go:3090: http: panic serving [::1]:55109: template: layout.html:11: unexpected "{" in command
+goroutine 38 [running]:
+net/http.(*conn).serve.func1(0xc0001ba0a0)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x13ba8a0, 0xc000012290)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x14c19a0, 0xc000240000, 0x13a0f60, 0x14b2640, 0xc00004bb30, 0x2, 0x2)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:16 +0x2b8
+go-todo-practice/app/controllers.top(0x14c19a0, 0xc000240000, 0xc0001b8200)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:8 +0xa4
+net/http.HandlerFunc.ServeHTTP(0x1449e00, 0x14c19a0, 0xc000240000, 0xc0001b8200)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1763d80, 0x14c19a0, 0xc000240000, 0xc0001b8200)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000106000, 0x14c19a0, 0xc000240000, 0xc0001b8200)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0001ba0a0, 0x14c23e0, 0xc000194180)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/02 16:21:43 server.go:3090: http: panic serving [::1]:55112: template: layout.html:11: unexpected "{" in command
+goroutine 39 [running]:
+net/http.(*conn).serve.func1(0xc0001ba140)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x13ba8a0, 0xc000012380)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x14c19a0, 0xc0002400e0, 0x13a0f60, 0x14b2640, 0xc0001c4b30, 0x2, 0x2)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:16 +0x2b8
+go-todo-practice/app/controllers.top(0x14c19a0, 0xc0002400e0, 0xc0001b8300)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:8 +0xa4
+net/http.HandlerFunc.ServeHTTP(0x1449e00, 0x14c19a0, 0xc0002400e0, 0xc0001b8300)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1763d80, 0x14c19a0, 0xc0002400e0, 0xc0001b8300)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000106000, 0x14c19a0, 0xc0002400e0, 0xc0001b8300)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0001ba140, 0x14c23e0, 0xc000194240)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/02 16:21:43 server.go:3090: http: panic serving [::1]:55113: template: layout.html:11: unexpected "{" in command
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0xc00007e0a0)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x13ba8a0, 0xc000012450)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x14c19a0, 0xc0002401c0, 0x13a0f60, 0x14b2640, 0xc00004bb30, 0x2, 0x2)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:16 +0x2b8
+go-todo-practice/app/controllers.top(0x14c19a0, 0xc0002401c0, 0xc000072700)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:8 +0xa4
+net/http.HandlerFunc.ServeHTTP(0x1449e00, 0x14c19a0, 0xc0002401c0, 0xc000072700)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1763d80, 0x14c19a0, 0xc0002401c0, 0xc000072700)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000106000, 0x14c19a0, 0xc0002401c0, 0xc000072700)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc00007e0a0, 0x14c23e0, 0xc000022280)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/02 16:21:43 server.go:3090: http: panic serving [::1]:55114: template: layout.html:11: unexpected "{" in command
+goroutine 29 [running]:
+net/http.(*conn).serve.func1(0xc0000b3680)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x13ba8a0, 0xc000012530)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x14c19a0, 0xc0002402a0, 0x13a0f60, 0x14b2640, 0xc00004fb30, 0x2, 0x2)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:16 +0x2b8
+go-todo-practice/app/controllers.top(0x14c19a0, 0xc0002402a0, 0xc0000feb00)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:8 +0xa4
+net/http.HandlerFunc.ServeHTTP(0x1449e00, 0x14c19a0, 0xc0002402a0, 0xc0000feb00)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1763d80, 0x14c19a0, 0xc0002402a0, 0xc0000feb00)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000106000, 0x14c19a0, 0xc0002402a0, 0xc0000feb00)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0000b3680, 0x14c23e0, 0xc0000ce9c0)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
