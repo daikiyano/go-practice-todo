@@ -445,3 +445,927 @@ created by net/http.(*Server).Serve
 2022/01/15 16:39:27 server.go:3090: http: superfluous response.WriteHeader call from go-todo-practice/app/controllers.authenticate (route_auth.go:68)
 2022/01/15 16:48:09 route_auth.go:51: sql: no rows in result set
 2022/01/15 16:48:09 server.go:3090: http: superfluous response.WriteHeader call from go-todo-practice/app/controllers.authenticate (route_auth.go:68)
+2022/01/15 17:25:05 server.go:3090: http: panic serving [::1]:59607: open app/views/templates/logout.html: no such file or directory
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc0000b7540)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc000184240)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0001bc000, 0x0, 0x0, 0xc0000cfb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0001bc000, 0xc0000da100)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0001bc000, 0xc0000da100)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0001bc000, 0xc0000da100)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc0001bc000, 0xc0000da100)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0000b7540, 0x4643ba0, 0xc0000de540)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:05 server.go:3090: http: panic serving [::1]:59608: open app/views/templates/logout.html: no such file or directory
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc000188000)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc0001843f0)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0001bc0e0, 0x0, 0x0, 0xc0000cfb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0001bc0e0, 0xc0001a6000)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0001bc0e0, 0xc0001a6000)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0001bc0e0, 0xc0001a6000)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc0001bc0e0, 0xc0001a6000)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc000188000, 0x4643ba0, 0xc00019e000)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:05 server.go:3090: http: panic serving [::1]:59609: open app/views/templates/logout.html: no such file or directory
+goroutine 22 [running]:
+net/http.(*conn).serve.func1(0xc0000b75e0)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc00009b8f0)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0001100e0, 0x0, 0x0, 0xc0000d5b20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0001100e0, 0xc0000da200)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0001100e0, 0xc0000da200)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0001100e0, 0xc0000da200)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc0001100e0, 0xc0000da200)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0000b75e0, 0x4643ba0, 0xc0000de600)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:06 server.go:3090: http: panic serving [::1]:59614: open app/views/templates/logout.html: no such file or directory
+goroutine 24 [running]:
+net/http.(*conn).serve.func1(0xc0000b7680)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc000204150)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc000210000, 0x0, 0x0, 0xc00021bb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc000210000, 0xc0000da400)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc000210000, 0xc0000da400)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc000210000, 0xc0000da400)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc000210000, 0xc0000da400)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0000b7680, 0x4643ba0, 0xc0000de7c0)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:06 server.go:3090: http: panic serving [::1]:59615: open app/views/templates/logout.html: no such file or directory
+goroutine 25 [running]:
+net/http.(*conn).serve.func1(0xc0000b7720)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc0001845d0)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0001bc1c0, 0x0, 0x0, 0xc0000cfb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0001bc1c0, 0xc0000da300)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0001bc1c0, 0xc0000da300)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0001bc1c0, 0xc0000da300)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc0001bc1c0, 0xc0000da300)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0000b7720, 0x4643ba0, 0xc0000de740)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:06 server.go:3090: http: panic serving [::1]:59616: open app/views/templates/logout.html: no such file or directory
+goroutine 26 [running]:
+net/http.(*conn).serve.func1(0xc0000b77c0)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc000184750)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0001bc2a0, 0x0, 0x0, 0xc0000cfb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0001bc2a0, 0xc0000da500)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0001bc2a0, 0xc0000da500)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0001bc2a0, 0xc0000da500)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc0001bc2a0, 0xc0000da500)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0000b77c0, 0x4643ba0, 0xc0000de880)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:06 server.go:3090: http: panic serving [::1]:59617: open app/views/templates/logout.html: no such file or directory
+goroutine 6 [running]:
+net/http.(*conn).serve.func1(0xc000234000)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc00009bda0)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0001101c0, 0x0, 0x0, 0xc0000d5b20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0001101c0, 0xc000236000)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0001101c0, 0xc000236000)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0001101c0, 0xc000236000)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc0001101c0, 0xc000236000)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc000234000, 0x4643ba0, 0xc000030140)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:06 server.go:3090: http: panic serving [::1]:59618: open app/views/templates/logout.html: no such file or directory
+goroutine 27 [running]:
+net/http.(*conn).serve.func1(0xc0000b7860)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc0001848d0)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0001bc380, 0x0, 0x0, 0xc0000cfb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0001bc380, 0xc0000da600)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0001bc380, 0xc0000da600)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0001bc380, 0xc0000da600)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc0001bc380, 0xc0000da600)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0000b7860, 0x4643ba0, 0xc0000de900)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:06 server.go:3090: http: panic serving [::1]:59619: open app/views/templates/logout.html: no such file or directory
+goroutine 29 [running]:
+net/http.(*conn).serve.func1(0xc0000b7900)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc000184a50)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0001bc460, 0x0, 0x0, 0xc0000cfb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0001bc460, 0xc0000da800)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0001bc460, 0xc0000da800)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0001bc460, 0xc0000da800)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc0001bc460, 0xc0000da800)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0000b7900, 0x4643ba0, 0xc0000dea40)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:07 server.go:3090: http: panic serving [::1]:59624: open app/views/templates/logout.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc0002340a0)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc000184c90)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0001bc540, 0x0, 0x0, 0xc0000cfb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0001bc540, 0xc000236100)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0001bc540, 0xc000236100)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0001bc540, 0xc000236100)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc0001bc540, 0xc000236100)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0002340a0, 0x4643ba0, 0xc0000301c0)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:07 server.go:3090: http: panic serving [::1]:59625: open app/views/templates/logout.html: no such file or directory
+goroutine 41 [running]:
+net/http.(*conn).serve.func1(0xc0001880a0)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc000184e10)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0001bc620, 0x0, 0x0, 0xc0000cfb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0001bc620, 0xc0001a6100)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0001bc620, 0xc0001a6100)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0001bc620, 0xc0001a6100)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc0001bc620, 0xc0001a6100)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0001880a0, 0x4643ba0, 0xc00019e580)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:07 server.go:3090: http: panic serving [::1]:59626: open app/views/templates/logout.html: no such file or directory
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc000234140)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc000146000)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0001102a0, 0x0, 0x0, 0xc0000d5b20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0001102a0, 0xc0001a6200)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0001102a0, 0xc0001a6200)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0001102a0, 0xc0001a6200)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc0001102a0, 0xc0001a6200)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc000234140, 0x4643ba0, 0xc00019e780)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:07 server.go:3090: http: panic serving [::1]:59627: open app/views/templates/logout.html: no such file or directory
+goroutine 44 [running]:
+net/http.(*conn).serve.func1(0xc000188140)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc0001461e0)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc000110380, 0x0, 0x0, 0xc0000d5b20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc000110380, 0xc0000da900)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc000110380, 0xc0000da900)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc000110380, 0xc0000da900)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc000110380, 0xc0000da900)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc000188140, 0x4643ba0, 0xc0000deb80)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:08 server.go:3090: http: panic serving [::1]:59628: open app/views/templates/logout.html: no such file or directory
+goroutine 45 [running]:
+net/http.(*conn).serve.func1(0xc0001881e0)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc000185110)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0001bc700, 0x0, 0x0, 0xc0000cfb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0001bc700, 0xc0001a6300)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0001bc700, 0xc0001a6300)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0001bc700, 0xc0001a6300)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc0001bc700, 0xc0001a6300)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0001881e0, 0x4643ba0, 0xc00019e800)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:08 server.go:3090: http: panic serving [::1]:59629: open app/views/templates/logout.html: no such file or directory
+goroutine 32 [running]:
+net/http.(*conn).serve.func1(0xc0000b79a0)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc000146420)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc000110460, 0x0, 0x0, 0xc000217b20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc000110460, 0xc0000daa00)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc000110460, 0xc0000daa00)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc000110460, 0xc0000daa00)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc000110460, 0xc0000daa00)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0000b79a0, 0x4643ba0, 0xc0000decc0)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:08 server.go:3090: http: panic serving [::1]:59634: open app/views/templates/logout.html: no such file or directory
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0xc0002341e0)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc000146600)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc000110540, 0x0, 0x0, 0xc000217b20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc000110540, 0xc0000dab00)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc000110540, 0xc0000dab00)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc000110540, 0xc0000dab00)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc000110540, 0xc0000dab00)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0002341e0, 0x4643ba0, 0xc0000dee00)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:08 server.go:3090: http: panic serving [::1]:59635: open app/views/templates/logout.html: no such file or directory
+goroutine 10 [running]:
+net/http.(*conn).serve.func1(0xc000234280)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc000185290)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0001bc7e0, 0x0, 0x0, 0xc0000cfb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0001bc7e0, 0xc000236200)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0001bc7e0, 0xc000236200)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0001bc7e0, 0xc000236200)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc0001bc7e0, 0xc000236200)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc000234280, 0x4643ba0, 0xc000030240)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:08 server.go:3090: http: panic serving [::1]:59636: open app/views/templates/logout.html: no such file or directory
+goroutine 51 [running]:
+net/http.(*conn).serve.func1(0xc0000b7a40)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc000146840)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc000110620, 0x0, 0x0, 0xc000217b20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc000110620, 0xc0000dac00)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc000110620, 0xc0000dac00)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc000110620, 0xc0000dac00)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc000110620, 0xc0000dac00)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0000b7a40, 0x4643ba0, 0xc0000def40)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:08 server.go:3090: http: panic serving [::1]:59637: open app/views/templates/logout.html: no such file or directory
+goroutine 11 [running]:
+net/http.(*conn).serve.func1(0xc000234320)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc000185410)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0001bc8c0, 0x0, 0x0, 0xc0000cfb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0001bc8c0, 0xc0000dad00)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0001bc8c0, 0xc0000dad00)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0001bc8c0, 0xc0000dad00)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc0001bc8c0, 0xc0000dad00)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc000234320, 0x4643ba0, 0xc0000df080)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:08 server.go:3090: http: panic serving [::1]:59638: open app/views/templates/logout.html: no such file or directory
+goroutine 12 [running]:
+net/http.(*conn).serve.func1(0xc0002343c0)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc0002046f0)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0002100e0, 0x0, 0x0, 0xc0000d5b20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0002100e0, 0xc000236300)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0002100e0, 0xc000236300)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0002100e0, 0xc000236300)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc0002100e0, 0xc000236300)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0002343c0, 0x4643ba0, 0xc0000302c0)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:08 server.go:3090: http: panic serving [::1]:59639: open app/views/templates/logout.html: no such file or directory
+goroutine 49 [running]:
+net/http.(*conn).serve.func1(0xc000188280)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc0002048a0)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0002101c0, 0x0, 0x0, 0xc0000d5b20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0002101c0, 0xc0001a6400)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0002101c0, 0xc0001a6400)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0002101c0, 0xc0001a6400)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc0002101c0, 0xc0001a6400)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc000188280, 0x4643ba0, 0xc00019eac0)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:09 server.go:3090: http: panic serving [::1]:59644: open app/views/templates/logout.html: no such file or directory
+goroutine 66 [running]:
+net/http.(*conn).serve.func1(0xc000188320)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc000204a80)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0002102a0, 0x0, 0x0, 0xc0000d5b20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0002102a0, 0xc0001a6500)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0002102a0, 0xc0001a6500)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0002102a0, 0xc0001a6500)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc0002102a0, 0xc0001a6500)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc000188320, 0x4643ba0, 0xc00019eb40)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:09 server.go:3090: http: panic serving [::1]:59645: open app/views/templates/logout.html: no such file or directory
+goroutine 67 [running]:
+net/http.(*conn).serve.func1(0xc0001883c0)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc0001857d0)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0001bc9a0, 0x0, 0x0, 0xc0000cfb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0001bc9a0, 0xc0001a6600)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0001bc9a0, 0xc0001a6600)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0001bc9a0, 0xc0001a6600)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc0001bc9a0, 0xc0001a6600)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0001883c0, 0x4643ba0, 0xc00019ebc0)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:09 server.go:3090: http: panic serving [::1]:59646: open app/views/templates/logout.html: no such file or directory
+goroutine 69 [running]:
+net/http.(*conn).serve.func1(0xc000188460)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc000185a10)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0001bca80, 0x0, 0x0, 0xc0000cfb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0001bca80, 0xc0001a6700)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0001bca80, 0xc0001a6700)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0001bca80, 0xc0001a6700)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc0001bca80, 0xc0001a6700)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc000188460, 0x4643ba0, 0xc00019ed00)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:14 server.go:3090: http: panic serving [::1]:59667: open app/views/templates/logout.html: no such file or directory
+goroutine 53 [running]:
+net/http.(*conn).serve.func1(0xc0000b7ae0)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc000146b40)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc000110700, 0x0, 0x0, 0xc000217b20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc000110700, 0xc0001a6800)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc000110700, 0xc0001a6800)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc000110700, 0xc0001a6800)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc000110700, 0xc0001a6800)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0000b7ae0, 0x4643ba0, 0xc00019ee40)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:14 server.go:3090: http: panic serving [::1]:59668: open app/views/templates/logout.html: no such file or directory
+goroutine 54 [running]:
+net/http.(*conn).serve.func1(0xc0000b7b80)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc000204c00)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc000210380, 0x0, 0x0, 0xc0000d5b20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc000210380, 0xc0000dae00)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc000210380, 0xc0000dae00)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc000210380, 0xc0000dae00)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc000210380, 0xc0000dae00)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0000b7b80, 0x4643ba0, 0xc0000df100)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:14 server.go:3090: http: panic serving [::1]:59669: open app/views/templates/logout.html: no such file or directory
+goroutine 71 [running]:
+net/http.(*conn).serve.func1(0xc000188500)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc000185cb0)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0001bcb60, 0x0, 0x0, 0xc0000cfb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0001bcb60, 0xc0001a6900)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0001bcb60, 0xc0001a6900)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0001bcb60, 0xc0001a6900)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000110000, 0x4642ee0, 0xc0001bcb60, 0xc0001a6900)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc000188500, 0x4643ba0, 0xc00019eec0)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:22 server.go:3090: http: panic serving [::1]:59704: open app/views/templates/logout.html: no such file or directory
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc000119540)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc000287890)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc00029a1c0, 0x0, 0x0, 0xc00020bb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc00029a1c0, 0xc000139100)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc00029a1c0, 0xc000139100)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc00029a1c0, 0xc000139100)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc00016c000, 0x4642ee0, 0xc00029a1c0, 0xc000139100)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc000119540, 0x4643ba0, 0xc00018e000)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:22 server.go:3090: http: panic serving [::1]:59705: open app/views/templates/logout.html: no such file or directory
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0xc0001195e0)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc000287a40)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc00029a2a0, 0x0, 0x0, 0xc00012fb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc00029a2a0, 0xc000138100)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc00029a2a0, 0xc000138100)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc00029a2a0, 0xc000138100)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc00016c000, 0x4642ee0, 0xc00029a2a0, 0xc000138100)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0001195e0, 0x4643ba0, 0xc0000305c0)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:22 server.go:3090: http: panic serving [::1]:59714: open app/views/templates/logout.html: no such file or directory
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0xc0001c2000)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc00018c420)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0001b40e0, 0x0, 0x0, 0xc0001cfb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0001b40e0, 0xc0001a2300)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0001b40e0, 0xc0001a2300)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0001b40e0, 0xc0001a2300)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc00016c000, 0x4642ee0, 0xc0001b40e0, 0xc0001a2300)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0001c2000, 0x4643ba0, 0xc00018e140)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:23 server.go:3090: http: panic serving [::1]:59721: open app/views/templates/logout.html: no such file or directory
+goroutine 25 [running]:
+net/http.(*conn).serve.func1(0xc0002c6140)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc000287d40)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc00029a380, 0x0, 0x0, 0xc00012fb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc00029a380, 0xc0001a2400)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc00029a380, 0xc0001a2400)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc00029a380, 0xc0001a2400)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc00016c000, 0x4642ee0, 0xc00029a380, 0xc0001a2400)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0002c6140, 0x4643ba0, 0xc00018e240)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:23 server.go:3090: http: panic serving [::1]:59722: open app/views/templates/logout.html: no such file or directory
+goroutine 26 [running]:
+net/http.(*conn).serve.func1(0xc0002c61e0)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc00022c7e0)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc00016c380, 0x0, 0x0, 0xc000135b20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc00016c380, 0xc000284b00)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc00016c380, 0xc000284b00)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc00016c380, 0xc000284b00)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc00016c000, 0x4642ee0, 0xc00016c380, 0xc000284b00)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0002c61e0, 0x4643ba0, 0xc0002947c0)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:23 server.go:3090: http: panic serving [::1]:59723: open app/views/templates/logout.html: no such file or directory
+goroutine 53 [running]:
+net/http.(*conn).serve.func1(0xc000119900)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc00022ca20)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc00016c460, 0x0, 0x0, 0xc000135b20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc00016c460, 0xc000139200)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc00016c460, 0xc000139200)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc00016c460, 0xc000139200)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc00016c000, 0x4642ee0, 0xc00016c460, 0xc000139200)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc000119900, 0x4643ba0, 0xc0000313c0)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:28 server.go:3090: http: panic serving [::1]:59845: open app/views/templates/logout.html: no such file or directory
+goroutine 37 [running]:
+net/http.(*conn).serve.func1(0xc0001c20a0)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc00018c750)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0001b41c0, 0x0, 0x0, 0xc0001cfb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0001b41c0, 0xc000139300)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0001b41c0, 0xc000139300)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0001b41c0, 0xc000139300)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc00016c000, 0x4642ee0, 0xc0001b41c0, 0xc000139300)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0001c20a0, 0x4643ba0, 0xc000031500)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:28 server.go:3090: http: panic serving [::1]:59846: open app/views/templates/logout.html: no such file or directory
+goroutine 38 [running]:
+net/http.(*conn).serve.func1(0xc0001c2140)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc00022cc00)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc00016c540, 0x0, 0x0, 0xc000135b20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc00016c540, 0xc0001a2500)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc00016c540, 0xc0001a2500)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc00016c540, 0xc0001a2500)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc00016c000, 0x4642ee0, 0xc00016c540, 0xc0001a2500)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0001c2140, 0x4643ba0, 0xc00018e2c0)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:28 server.go:3090: http: panic serving [::1]:59847: open app/views/templates/logout.html: no such file or directory
+goroutine 40 [running]:
+net/http.(*conn).serve.func1(0xc0001c21e0)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc00018c990)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0001b42a0, 0x0, 0x0, 0xc0001cfb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0001b42a0, 0xc0001a2600)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0001b42a0, 0xc0001a2600)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0001b42a0, 0xc0001a2600)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc00016c000, 0x4642ee0, 0xc0001b42a0, 0xc0001a2600)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0001c21e0, 0x4643ba0, 0xc00018e440)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:58 server.go:3090: http: panic serving [::1]:60076: open app/views/templates/logout.html: no such file or directory
+goroutine 28 [running]:
+net/http.(*conn).serve.func1(0xc0002c6280)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc0002fc090)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc00029a460, 0x0, 0x0, 0xc00012fb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc00029a460, 0xc000284c00)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc00029a460, 0xc000284c00)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc00029a460, 0xc000284c00)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc00016c000, 0x4642ee0, 0xc00029a460, 0xc000284c00)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0002c6280, 0x4643ba0, 0xc000294900)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:58 server.go:3090: http: panic serving [::1]:60077: open app/views/templates/logout.html: no such file or directory
+goroutine 29 [running]:
+net/http.(*conn).serve.func1(0xc0002c6320)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc00022cdb0)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc00016c620, 0x0, 0x0, 0xc000135b20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc00016c620, 0xc000284d00)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc00016c620, 0xc000284d00)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc00016c620, 0xc000284d00)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc00016c000, 0x4642ee0, 0xc00016c620, 0xc000284d00)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0002c6320, 0x4643ba0, 0xc000294980)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:25:58 server.go:3090: http: panic serving [::1]:60078: open app/views/templates/logout.html: no such file or directory
+goroutine 31 [running]:
+net/http.(*conn).serve.func1(0xc0002c63c0)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc00022cf90)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc00016c700, 0x0, 0x0, 0xc000135b20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc00016c700, 0xc000284e00)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc00016c700, 0xc000284e00)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc00016c700, 0xc000284e00)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc00016c000, 0x4642ee0, 0xc00016c700, 0xc000284e00)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0002c63c0, 0x4643ba0, 0xc000294b00)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:26:30 server.go:3090: http: panic serving [::1]:60316: open app/views/templates/logout.html: no such file or directory
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc0000b74a0)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc00010e240)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc000134000, 0x0, 0x0, 0xc0000cfb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc000134000, 0xc0000da100)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc000134000, 0xc0000da100)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc000134000, 0xc0000da100)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000190000, 0x4642ee0, 0xc000134000, 0xc0000da100)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0000b74a0, 0x4643ba0, 0xc0000de540)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:26:30 server.go:3090: http: panic serving [::1]:60317: open app/views/templates/logout.html: no such file or directory
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc000112000)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc00010e3f0)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0001340e0, 0x0, 0x0, 0xc0000cfb20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0001340e0, 0xc00011e000)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0001340e0, 0xc00011e000)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0001340e0, 0xc00011e000)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000190000, 0x4642ee0, 0xc0001340e0, 0xc00011e000)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc000112000, 0x4643ba0, 0xc000118000)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/01/15 17:26:30 server.go:3090: http: panic serving [::1]:60318: open app/views/templates/logout.html: no such file or directory
+goroutine 22 [running]:
+net/http.(*conn).serve.func1(0xc0000b7540)
+	/usr/local/go/src/net/http/server.go:1800 +0x139
+panic(0x453e480, 0xc00009b8f0)
+	/usr/local/go/src/runtime/panic.go:975 +0x3e3
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:372
+go-todo-practice/app/controllers.generateHTML(0x4642ee0, 0xc0001900e0, 0x0, 0x0, 0xc0000d5b20, 0x3, 0x3)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/server.go:17 +0x2b8
+go-todo-practice/app/controllers.todoNew(0x4642ee0, 0xc0001900e0, 0xc0000da200)
+	/Users/daikiyano/go/src/go-todo-practice/app/controllers/route_main.go:42 +0x15d
+net/http.HandlerFunc.ServeHTTP(0x45c24c0, 0x4642ee0, 0xc0001900e0, 0xc0000da200)
+	/usr/local/go/src/net/http/server.go:2041 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4926be0, 0x4642ee0, 0xc0001900e0, 0xc0000da200)
+	/usr/local/go/src/net/http/server.go:2416 +0x1a5
+net/http.serverHandler.ServeHTTP(0xc000190000, 0x4642ee0, 0xc0001900e0, 0xc0000da200)
+	/usr/local/go/src/net/http/server.go:2836 +0xa3
+net/http.(*conn).serve(0xc0000b7540, 0x4643ba0, 0xc0000de600)
+	/usr/local/go/src/net/http/server.go:1924 +0x86c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2962 +0x35c
