@@ -109,7 +109,7 @@ created_at) values (?,?,?,?)`
 }
 
 func (sess *Session) CheckSession() (valid bool, err error) {
-	cmd := `select id,uuid, email, user_id,created_at from sessions where uuid`
+	cmd := `select id,uuid, email, user_id,created_at from sessions where uuid = ?`
 	err = Db.QueryRow(cmd, sess.UUID).Scan(&sess.ID,
 		&sess.UUID,
 		&sess.Email,
@@ -123,4 +123,13 @@ func (sess *Session) CheckSession() (valid bool, err error) {
 		valid = true
 	}
 	return valid, err
+}
+
+func (sess *Session) DeleteSessionByUUID() (err error) {
+	cmd := `delete from sessions where uuid = ?`
+	_, err = Db.Exec(cmd, sess.UUID)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	return err
 }

@@ -412,3 +412,36 @@ created by net/http.(*Server).Serve
 2022/01/03 11:13:39 server.go:3090: http: superfluous response.WriteHeader call from go-todo-practice/app/controllers.authenticate (route_auth.go:56)
 2022/01/03 11:13:41 route_auth.go:39: sql: no rows in result set
 2022/01/03 11:13:41 server.go:3090: http: superfluous response.WriteHeader call from go-todo-practice/app/controllers.authenticate (route_auth.go:56)
+2022/01/03 13:03:26 route_auth.go:80: <nil>
+2022/01/03 22:39:57 route_auth.go:51: sql: no rows in result set
+2022/01/03 22:39:57 server.go:3090: http: superfluous response.WriteHeader call from go-todo-practice/app/controllers.authenticate (route_auth.go:68)
+2022/01/03 22:42:06 route_auth.go:51: sql: no rows in result set
+2022/01/03 22:42:06 server.go:3090: http: superfluous response.WriteHeader call from go-todo-practice/app/controllers.authenticate (route_auth.go:68)
+2022/01/03 22:42:08 route_auth.go:51: sql: no rows in result set
+2022/01/03 22:42:08 server.go:3090: http: superfluous response.WriteHeader call from go-todo-practice/app/controllers.authenticate (route_auth.go:68)
+2022/01/03 22:42:30 route_auth.go:51: sql: no rows in result set
+2022/01/03 22:42:30 server.go:3090: http: superfluous response.WriteHeader call from go-todo-practice/app/controllers.authenticate (route_auth.go:68)
+2022/01/05 22:44:56 route_auth.go:51: sql: no rows in result set
+2022/01/05 22:44:56 server.go:3090: http: superfluous response.WriteHeader call from go-todo-practice/app/controllers.authenticate (route_auth.go:68)
+2022/01/05 22:45:09 route_auth.go:51: sql: no rows in result set
+2022/01/05 22:45:09 server.go:3090: http: superfluous response.WriteHeader call from go-todo-practice/app/controllers.authenticate (route_auth.go:68)
+2022/01/05 22:50:07 route_auth.go:51: sql: no rows in result set
+2022/01/05 22:50:07 server.go:3090: http: superfluous response.WriteHeader call from go-todo-practice/app/controllers.authenticate (route_auth.go:68)
+2022/01/05 22:54:13 route_auth.go:51: sql: no rows in result set
+2022/01/05 22:54:13 server.go:3090: http: superfluous response.WriteHeader call from go-todo-practice/app/controllers.authenticate (route_auth.go:68)
+2022/01/15 16:39:22 route_auth.go:51: sql: no rows in result set
+2022/01/15 16:39:22 server.go:3090: http: superfluous response.WriteHeader call from go-todo-practice/app/controllers.authenticate (route_auth.go:68)
+2022/01/15 16:39:23 route_auth.go:51: sql: no rows in result set
+2022/01/15 16:39:23 server.go:3090: http: superfluous response.WriteHeader call from go-todo-practice/app/controllers.authenticate (route_auth.go:68)
+2022/01/15 16:39:24 route_auth.go:51: sql: no rows in result set
+2022/01/15 16:39:24 server.go:3090: http: superfluous response.WriteHeader call from go-todo-practice/app/controllers.authenticate (route_auth.go:68)
+2022/01/15 16:39:25 route_auth.go:51: sql: no rows in result set
+2022/01/15 16:39:25 server.go:3090: http: superfluous response.WriteHeader call from go-todo-practice/app/controllers.authenticate (route_auth.go:68)
+2022/01/15 16:39:26 route_auth.go:51: sql: no rows in result set
+2022/01/15 16:39:26 server.go:3090: http: superfluous response.WriteHeader call from go-todo-practice/app/controllers.authenticate (route_auth.go:68)
+2022/01/15 16:39:27 route_auth.go:51: sql: no rows in result set
+2022/01/15 16:39:27 server.go:3090: http: superfluous response.WriteHeader call from go-todo-practice/app/controllers.authenticate (route_auth.go:68)
+2022/01/15 16:39:27 route_auth.go:51: sql: no rows in result set
+2022/01/15 16:39:27 server.go:3090: http: superfluous response.WriteHeader call from go-todo-practice/app/controllers.authenticate (route_auth.go:68)
+2022/01/15 16:48:09 route_auth.go:51: sql: no rows in result set
+2022/01/15 16:48:09 server.go:3090: http: superfluous response.WriteHeader call from go-todo-practice/app/controllers.authenticate (route_auth.go:68)
