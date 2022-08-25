@@ -1369,3 +1369,9 @@ net/http.(*conn).serve(0xc0000b7540, 0x4643ba0, 0xc0000de600)
 	/usr/local/go/src/net/http/server.go:1924 +0x86c
 created by net/http.(*Server).Serve
 	/usr/local/go/src/net/http/server.go:2962 +0x35c
+2022/08/24 22:13:05 route_auth.go:51: sql: no rows in result set
+2022/08/24 22:13:05 server.go:3090: http: superfluous response.WriteHeader call from go-todo-practice/app/controllers.authenticate (route_auth.go:68)
+2022/08/25 22:53:02 route_auth.go:51: sql: no rows in result set
+2022/08/25 22:53:02 server.go:3090: http: superfluous response.WriteHeader call from go-todo-practice/app/controllers.authenticate (route_auth.go:68)
+2022/08/25 22:53:03 route_auth.go:51: sql: no rows in result set
+2022/08/25 22:53:03 server.go:3090: http: superfluous response.WriteHeader call from go-todo-practice/app/controllers.authenticate (route_auth.go:68)

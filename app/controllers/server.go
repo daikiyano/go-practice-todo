@@ -5,6 +5,7 @@ import (
 	"go-todo-practice/app/models"
 	"go-todo-practice/config"
 	"html/template"
+	"log"
 	"net/http"
 	"regexp"
 	"strconv"
@@ -49,6 +50,29 @@ func parseURL(fn func(http.ResponseWriter, *http.Request, int)) http.HandlerFunc
 	}
 }
 
+func todoUpdate(w http.ResponseWriter, r *http.Request, id int) {
+	sess, err := session(w, r)
+	if err != nil {
+		http.Redirect(w, r, "/login", 302)
+	} else {
+		err := r.ParseForm()
+		if err != nil {
+			log.Println(err)
+		}
+		user, err := sess.GetUserBySession()
+		if err != nil {
+			log.Println(err)
+		}
+
+		content := r.PostFormValue("content")
+		t := &models.Todo{ID: id, Content: content, UserID: user.ID}
+		if err := t.UpdateTodo(); err != nil {
+			log.Println(err)
+		}
+		http.Redirect(w, r, "/todos", 302)
+	}
+}
+
 //var validPath = regexp.MustCompile("^/todos/(edit|save|update|delete)/([0-9]+)$")
 //
 //func parseURL(fn func(http.ResponseWriter, *http.Request, int)) http.HandlerFunc {
@@ -74,5 +98,6 @@ func StartMainServer() error {
 	http.HandleFunc("/todos/new", todoNew)
 	http.HandleFunc("/todos/save", todoSave)
 	http.HandleFunc("/todos/edit/", parseURL(todoEdit))
+	http.HandleFunc("/todos/update/", parseURL(todoUpdate))
 	return http.ListenAndServe(":"+config.Config.Port, nil)
 }
