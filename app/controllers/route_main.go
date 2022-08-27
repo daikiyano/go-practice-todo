@@ -82,3 +82,27 @@ func todoEdit(w http.ResponseWriter, r *http.Request, id int) {
 		generateHTML(w, t, "layout", "private_navbar", "todo_edit")
 	}
 }
+
+func todoDelete(w http.ResponseWriter, r *http.Request, id int) {
+	sess, err := session(w, r)
+	if err != nil {
+		http.Redirect(w, r, "/login", 302)
+
+	} else {
+		_, err := sess.GetUserBySession()
+		if err != nil {
+			log.Println(err)
+		}
+		t, err := models.GetTodo(id)
+
+		if err != nil {
+			log.Println(err)
+		}
+
+		if err := t.DeleteTodo(); err != nil {
+			log.Println(err)
+		}
+
+		http.Redirect(w, r, "/todos", 302)
+	}
+}
