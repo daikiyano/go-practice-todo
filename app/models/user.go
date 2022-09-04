@@ -76,7 +76,7 @@ func (u *User) DeleteUser() (err error) {
 
 func GetUserByEmail(email string) (user User, err error) {
 	user = User{}
-	cmd := `select id,uuid,name,email,password,created_at from users where email = $2`
+	cmd := `select id,uuid,name,email,password,created_at from users where email = $1`
 	err = Db.QueryRow(cmd, email).Scan(&user.ID,
 		&user.UUID,
 		&user.Name,
